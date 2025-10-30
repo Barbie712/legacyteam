@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Consultorio Jurídico | Asesoría Legal Profesional</title>
+  <meta name="description" content="Consultorio jurídico: Derecho civil, penal, familiar, laboral y asesoría empresarial. Agenda tu consulta." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0b2545',
+            gold: '#C49A3A',
+            black: '#0b0b0b'
+          },
+          fontFamily: {
+            sans: ['Lato', 'system-ui', 'sans-serif'],
+            serif: ['Merriweather', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: Lato, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    h1,h2,h3,h4 { font-family: 'Merriweather', serif; }
+    .gold-gradient { background: linear-gradient(90deg, rgba(196,154,58,1) 0%, rgba(170,135,45,1) 100%); }
+  </style>
+</head>
+<body class="antialiased text-gray-800 bg-gradient-to-b from-white via-gray-50 to-gray-100">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-lg bg-navy flex items-center justify-center text-white font-bold text-lg">CJ</div>
+        <div>
+          <h1 class="text-lg font-semibold text-navy">Consultorio Jurídico</h1>
+          <p class="text-sm text-gray-500">Confianza, ética y resultados</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex gap-6 items-center text-sm">
+        <a href="#inicio" class="hover:text-navy">Inicio</a>
+        <a href="#servicios" class="hover:text-navy">Servicios</a>
+        <a href="#nosotros" class="hover:text-navy">Nosotros</a>
+        <a href="#contacto" class="hover:text-navy">Contacto</a>
+        <a href="#contacto" class="ml-4 inline-block gold-gradient text-black px-4 py-2 rounded-lg shadow">Agenda tu consulta</a>
+      </nav>
+
+      <button id="btn-mobile" class="md:hidden p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy">
+        <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/></svg>
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden border-t">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="#inicio" class="block">Inicio</a>
+        <a href="#servicios" class="block">Servicios</a>
+        <a href="#nosotros" class="block">Nosotros</a>
+        <a href="#contacto" class="block">Contacto</a>
+        <a href="#contacto" class="block mt-2 gold-gradient text-black text-center py-2 rounded-lg">Agenda tu consulta</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="relative">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1555375771-14a0b7c44d62?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Juzgado elegante" class="w-full h-full object-cover filter grayscale brightness-75" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-6 py-28">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="text-white">
+          <p class="text-sm font-semibold text-gold">Consultorio Jurídico</p>
+          <h2 class="text-3xl md:text-5xl font-extrabold mt-3">Defendemos tus derechos con compromiso y experiencia</h2>
+          <p class="mt-4 text-lg text-gray-200 max-w-xl">Asesoría legal personalizada en derecho civil, penal, familiar, laboral y empresarial. Atención ética, estratégica y enfocada en resultados.</p>
+
+          <div class="mt-6 flex gap-3">
+            <a href="#contacto" class="inline-block bg-gold text-black px-5 py-3 rounded-lg font-semibold">Solicita asesoría legal</a>
+            <a href="#servicios" class="inline-block border border-white/40 text-white px-5 py-3 rounded-lg">Ver servicios</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-white/95 rounded-2xl p-6 shadow-xl">
+            <h3 class="text-navy font-semibold text-xl">Consulta inicial — 30 minutos</h3>
+            <p class="text-sm text-gray-600 mt-2">Evaluación del caso y orientación sobre pasos a seguir. Atención presencial y virtual.</p>
+            <ul class="mt-4 text-sm text-gray-600 space-y-2">
+              <li>✔️ Explicación clara del proceso</li>
+              <li>✔️ Estimación de costos y tiempos</li>
+              <li>✔️ Plan de acción personalizado</li>
+            </ul>
+            <div class="mt-4 flex gap-2">
+              <a href="#contacto" class="inline-block gold-gradient text-black px-4 py-2 rounded">Agendar</a>
+              <a href="#nosotros" class="inline-block border px-4 py-2 rounded">Conoce al equipo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold text-navy mb-4">Servicios</h2>
+    <p class="text-gray-600 mb-8">Ofrecemos asesoría integral y representación en las siguientes áreas:</p>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Service Card -->
+      <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-md bg-navy text-white flex items-center justify-center">⚖️</div>
+          <h3 class="font-semibold">Derecho Civil</h3>
+        </div>
+        <p class="text-sm text-gray-600 mt-3">Contratos, obligaciones, reclamaciones y responsabilidad civil.</p>
+        <a href="#contacto" class="mt-4 inline-block text-sm text-navy">Solicitar consulta →</a>
+      </article>
+
+      <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-md bg-navy text-white flex items-center justify-center">🛡️</div>
+          <h3 class="font-semibold">Derecho Penal</h3>
+        </div>
+        <p class="text-sm text-gray-600 mt-3">Defensa penal, medidas cautelares y representación en todos los niveles.</p>
+        <a href="#contacto" class="mt-4 inline-block text-sm text-navy">Solicitar consulta →</a>
+      </article>
+
+      <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-md bg-navy text-white flex items-center justify-center">🤝</div>
+          <h3 class="font-semibold">Derecho Familiar</h3>
+        </div>
+        <p class="text-sm text-gray-600 mt-3">Divorcios, pensiones, régimen de visitas y protección de menores.</p>
+        <a href="#contacto" class="mt-4 inline-block text-sm text-navy">Solicitar consulta →</a>
+      </article>
+
+      <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-md bg-navy text-white flex items-center justify-center">💼</div>
+          <h3 class="font-semibold">Derecho Laboral</h3>
+        </div>
+        <p class="text-sm text-gray-600 mt-3">Despidos, reclamaciones laborales y negociación colectiva.</p>
+        <a href="#contacto" class="mt-4 inline-block text-sm text-navy">Solicitar consulta →</a>
+      </article>
+
+      <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-md bg-navy text-white flex items-center justify-center">🏛️</div>
+          <h3 class="font-semibold">Asesoría Empresarial</h3>
+        </div>
+        <p class="text-sm text-gray-600 mt-3">Constitución de empresas, contratos comerciales y cumplimiento normativo.</p>
+        <a href="#contacto" class="mt-4 inline-block text-sm text-navy">Solicitar consulta →</a>
+      </article>
+
+      <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-md bg-navy text-white flex items-center justify-center">🕊️</div>
+          <h3 class="font-semibold">Mediación y Arbitraje</h3>
+        </div>
+        <p class="text-sm text-gray-600 mt-3">Soluciones alternativas de conflicto, rápidas y efectivas.</p>
+        <a href="#contacto" class="mt-4 inline-block text-sm text-navy">Solicitar consulta →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sobre nosotros -->
+  <section id="nosotros" class="bg-white border-t py-12">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-2xl font-bold text-navy">Nosotros</h2>
+        <p class="text-gray-600 mt-4">Somos un equipo de abogados colegiados con amplia experiencia en distintas ramas del derecho. Nos guiamos por la ética profesional, la confidencialidad y la búsqueda de soluciones efectivas para cada caso.</p>
+        <ul class="mt-4 space-y-2 text-sm text-gray-600">
+          <li>✔️ Profesionales colegiados</li>
+          <li>✔️ Atención presencial y virtual</li>
+          <li>✔️ Estrategias personalizadas por caso</li>
+        </ul>
+        <a href="#contacto" class="mt-6 inline-block gold-gradient text-black px-4 py-2 rounded-lg">Agenda tu consulta</a>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4">
+        <div class="p-4 rounded-lg bg-gray-50 shadow">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Abogada" class="w-full h-40 object-cover rounded-md mb-3">
+          <h4 class="font-semibold">Dra. Nombre Apellido</h4>
+          <p class="text-sm text-gray-600">Especialista en Derecho Civil</p>
+        </div>
+        <div class="p-4 rounded-lg bg-gray-50 shadow">
+          <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Abogado" class="w-full h-40 object-cover rounded-md mb-3">
+          <h4 class="font-semibold">Dr. Nombre Apellido</h4>
+          <p class="text-sm text-gray-600">Especialista en Derecho Penal</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold mb-6 text-navy">Contacto</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <form id="contact-form" class="bg-white p-6 rounded-lg shadow space-y-4" action="https://formspree.io/f/your-form-id" method="POST">
+        <div>
+          <label class="block text-sm font-medium">Nombre</label>
+          <input name="name" required class="mt-2 w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-navy" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Correo electrónico</label>
+          <input name="email" type="email" required class="mt-2 w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-navy" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Teléfono / WhatsApp</label>
+          <input name="phone" class="mt-2 w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-navy" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Mensaje</label>
+          <textarea name="message" rows="4" required class="mt-2 w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-navy"></textarea>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <button type="submit" class="bg-navy text-white px-4 py-2 rounded-lg">Enviar consulta</button>
+          <p id="form-status" class="text-sm text-gray-600"></p>
+        </div>
+      </form>
+
+      <div class="space-y-4">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold">Información directa</h3>
+          <p class="text-sm text-gray-600 mt-2">Puedes escribirnos por WhatsApp o llamar para agendar una consulta.</p>
+          <ul class="mt-3 text-sm space-y-2 text-gray-700">
+            <li>📍 Dirección: Av. Ejemplo 123, Ciudad, País</li>
+            <li>☎️ Teléfono: <a href="tel:+51900000000" class="text-navy">+51 900 000 000</a></li>
+            <li>✉️ Correo: <a href="mailto:contacto@consultoriolegal.com" class="text-navy">contacto@consultoriolegal.com</a></li>
+            <li>⏰ Horario: Lun - Vie 9:00 - 18:00</li>
+          </ul>
+          <div class="mt-4">
+            <a href="https://wa.me/51900000000" target="_blank" class="inline-block bg-green-600 text-white px-4 py-2 rounded">Abrir WhatsApp</a>
+          </div>
+        </div>
+
+        <div id="ubicacion" class="bg-white rounded-lg overflow-hidden shadow">
+          <h3 class="px-6 pt-6 font-semibold">Ubicación</h3>
+          <div class="p-6">
+            <!-- Replace the iframe src with your Google Maps embed link -->
+            <iframe class="w-full h-56 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.0000000000005!2d-77.03000000000002!3d-12.046000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDAyJzAwLjAiUyA3N8KwMDEnMDAuMCJX!5e0!3m2!1ses-419!2spe!4v0000000000000" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="text-sm text-gray-500 mt-2">Reemplaza el iframe por tu enlace de Google Maps para mostrar la ubicación exacta.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white mt-12">
+    <div class="max-w-6xl mx-auto px-6 py-8 grid md:grid-cols-3 gap-6">
+      <div>
+        <h4 class="font-semibold">Consultorio Jurídico</h4>
+        <p class="text-sm text-gray-300 mt-2">Protegemos lo que te importa. Atención profesional y cercana.</p>
+      </div>
+
+      <div>
+        <h5 class="font-semibold">Enlaces</h5>
+        <ul class="mt-2 text-sm text-gray-300 space-y-2">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="font-semibold">Síguenos</h5>
+        <div class="mt-2 flex gap-3">
+          <a href="#" aria-label="Facebook" class="text-gray-300 hover:text-white">Facebook</a>
+          <a href="#" aria-label="Instagram" class="text-gray-300 hover:text-white">Instagram</a>
+          <a href="#" aria-label="LinkedIn" class="text-gray-300 hover:text-white">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 text-center text-sm py-4">© <span id="year"></span> Consultorio Jurídico. Todos los derechos reservados. <a href="#" class="underline">Aviso legal</a> · <a href="#" class="underline">Política de privacidad</a></div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const btn = document.getElementById('btn-mobile');
+    const menu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    });
+
+    // Year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple form behaviour (replace with real backend integration)
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+    form.addEventListener('submit', (e) => {
+      status.textContent = 'Enviando...';
+    });
+  </script>
+</body>
+</html>
